@@ -15,14 +15,12 @@ def subjects():
     global subject, file_name
     subject=e.get().upper()
     file_name="C:\\Users\\Vanda\\Desktop\\subjects\\"+subject+".txt"
-    #C:\Users\rohan\Downloads\New folder\Question_Generator-master\Question_Generator-master\Subjects\COMPUTER NETWORKS.txt
     print(file_name)
     try:
         with open(file_name,'r') as file:
                 data = file.read().split("\n")#data contain single string seperated by \n
     except:
         messagebox.showerror("File does not exists! Please make questions list of the subject first .")
-        #print("File does not exists! Please make questions list of the subject first .")
     file.close()
     for inputs in data:
         inp=inputs.split("::")
