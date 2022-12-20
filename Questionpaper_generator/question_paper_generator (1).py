@@ -14,7 +14,7 @@ root.geometry("500x700")
 def subjects():
     global subject, file_name
     subject=e.get().upper()
-    file_name="C:\\Users\\Vanda\\Desktop\\subjects\\"+subject+".txt"
+    file_name="C:\\Users\\user\\Desktop\\subjects\\"+subject+".txt"
     print(file_name)
     try:
         with open(file_name,'r') as file:
@@ -39,7 +39,7 @@ def subjects():
         else:
                 K6.append(question)#PUT IN LIST K6
     global output_text_name 
-    output_text_name="C:\\Users\\Vanda\\Desktop\\subjects\\"+subject+" Question Paper.txt"
+    output_text_name="C:\\Users\\user\\Desktop\\subjects\\"+subject+" Question Paper.txt"
     global f 
     f = open(output_text_name,'w')
     f.close()
